@@ -17,7 +17,10 @@ var app = {
                 'Are you sure you want to exit the application?', 
                 function(buttonIndex) {
                     if(buttonIndex == 1) return;
-                    else if(buttonIndex == 2) navigator.app.exitApp();
+                    else if(buttonIndex == 2) {
+                        navigator.notification.vibrate(0);
+                        navigator.app.exitApp();
+                    }
                 }, 
                 'Exit app', 
                 'Cancel,Exit');

@@ -60,7 +60,7 @@ a.list-group-item:hover, a.list-group-item:focus {
 
 
 #container {
-	width: 90%;
+	width: 100%;
 	margin: 10px auto;
 	padding: 20px;
 	border: 1px solid #001F3F;
