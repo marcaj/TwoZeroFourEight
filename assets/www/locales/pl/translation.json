@@ -1,0 +1,25 @@
+{
+  "controls": {
+    "undo": "Cofnij",
+    "reset": "Nowa gra",
+    "exit": "Wyjście"
+  },
+  "menu": {
+    "menu": "Menu",
+    "newgame": "Nowa gra",
+    "settings": "Ustawienia",
+    "exit": "Wyjście"
+  },
+  "notification": {
+  	"exit": {
+  		"question":	"Czy napewno chcesz opuścić aplikację?",
+  		"title": "Wyjście z aplikacji",
+  		"buttons": "Anuluj,Zakończ"
+  	},
+  	"refresh": {
+  		"question":	"Czy napewno chcesz rozpocząć nową grę?",
+  		"title": "Nowa gra",
+  		"buttons": "Anuluj,Nowa gra"
+  	}
+  }
+}

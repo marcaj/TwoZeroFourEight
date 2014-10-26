@@ -1,0 +1,26 @@
+{
+  "controls": {
+    "undo": "Undo",
+    "reset": "Reset",
+    "exit": "Exit"
+  },
+  "menu": {
+    "menu": "Menu",
+    "newgame": "New game",
+    "settings": "Settings",
+    "exit": "Exit"
+  },
+  "notification": {
+  	"exit": {
+  		"question":	"Are you sure you want to exit the application?",
+  		"title": "Exit app",
+  		"buttons": "Cancel,Exit"
+  	},
+  	"refresh": {
+  		"question":	"Are you sure you want to start a new game?",
+  		"title": "Refresh game",
+  		"buttons": "Cancel,Refresh"
+  	}
+  }
+  
+}

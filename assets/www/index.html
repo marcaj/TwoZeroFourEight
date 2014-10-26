@@ -13,6 +13,7 @@
 	<script src="jquery.mobile/jquery.mobile-1.1.0.min.js"></script>
 	<script src="libs/bootstrap.min.js"></script>
 	<script src="libs/fastclick.js"></script>
+	<script src="libs/i18next-1.7.4.js"></script>
 	<script type="text/javascript" charset="utf-8" src="cordova-1.9.0.js"></script>
 	<script type="text/javascript" charset="utf-8" src="js/menu.js"></script>
 	<script type="text/javascript" charset="utf-8" src="js/index.js"></script>
@@ -43,18 +44,18 @@
 			</div>
 			
 			<div class="controls" data-role="controlgroup">
-				<a href="#" data-role="button" data-theme="b" data-icon="back" onclick="app.undo();">Undo</a>
-				<a href="#" data-role="button" data-theme="b" data-icon="refresh" onclick="app.askRefresh();">Reset</a>
-				<a href="#" data-role="button" data-theme="b" data-icon="delete" onclick="app.askExit();">Exit</a>
+				<a href="#" data-role="button" data-theme="b" data-icon="back" data-i18n="controls.undo" onclick="app.undo();">Undo</a>
+				<a href="#" data-role="button" data-theme="b" data-icon="refresh" data-i18n="controls.reset" onclick="app.askRefresh();">Reset</a>
+				<a href="#" data-role="button" data-theme="b" data-icon="delete" data-i18n="controls.exit" onclick="app.askExit();">Exit</a>
 			</div>
 		</div>
 	</div>
 	
 	<div id="menu" class="list-group" style="display: block;">
-		<div class="infomenu">Home</div>
-		<a href="#" class="list-group-item active" data-transition="pop">New game</a>
-		<a href="#" class="list-group-item" data-transition="pop">Settings</a>
-		<a href="#" class="list-group-item" data-transition="pop" onclick="app.askExit();">Exit</a>
+		<div class="infomenu" data-i18n="menu.menu">Menu</div>
+		<a href="#" class="list-group-item active" data-transition="pop" data-i18n="menu.newgame" onclick="app.askRefresh();">New game</a>
+		<!-- <a href="#" class="list-group-item" data-i18n="menu.settings" data-transition="pop">Settings</a> -->
+		<a href="#" class="list-group-item" data-transition="pop" data-i18n="menu.exit" onclick="app.askExit();">Exit</a>
 	</div>
 	
   </body>

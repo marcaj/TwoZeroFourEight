@@ -7,6 +7,10 @@ function deviceReady() {
     FastClick.attach(document.body);
     document.addEventListener("backbutton", app.undo, false);
     
+    i18n.init({ fallbackLng: 'en' }, function(t) {
+        $(document).i18n();
+    });
+    
     home.init(); 
 }
 
@@ -14,7 +18,7 @@ var app = {
         
     askExit: function() {
         navigator.notification.confirm(
-                'Are you sure you want to exit the application?', 
+                i18n.t("notification.exit.question"),
                 function(buttonIndex) {
                     if(buttonIndex == 1) return;
                     else if(buttonIndex == 2) {
@@ -22,19 +26,21 @@ var app = {
                         navigator.app.exitApp();
                     }
                 }, 
-                'Exit app', 
-                'Cancel,Exit');
+                i18n.t("notification.exit.title"),
+                i18n.t("notification.exit.buttons")
+        );
     },
     
     askRefresh: function() {
         navigator.notification.confirm(
-                'Are you sure you want to start a new game?', 
+                i18n.t("notification.refresh.question"),
                 function(buttonIndex) {
                     if(buttonIndex == 1) return;
                     else if(buttonIndex == 2) return;
                 }, 
-                'Refresh game', 
-                'Cancel,Refresh');
+                i18n.t("notification.refresh.title"), 
+                i18n.t("notification.refresh.buttons")
+        );
     },
     
     undo: function() {},
