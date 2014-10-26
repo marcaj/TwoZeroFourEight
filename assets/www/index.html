@@ -7,8 +7,7 @@
 
  	<link rel="stylesheet" href="jquery.mobile/jquery.mobile-1.1.0.min.css" />
  	<link rel="stylesheet" href="libs/bootstrap.min.css" />
-	<link rel="stylesheet" href="pages/login.css" /> 
-	<link rel="stylesheet" href="pages/home.css" />
+	<link rel="stylesheet" href="pages/style.css" />
 
     <script src="jquery.mobile/jquery-1.7.2.min"></script>
 	<script src="jquery.mobile/jquery.mobile-1.1.0.min.js"></script>
@@ -41,6 +40,12 @@
 		<div data-role="content">
 			<div id="container">
 				<div id="board"></div>
+			</div>
+			
+			<div class="controls" data-role="controlgroup">
+				<a href="#" data-role="button" data-theme="b" data-icon="back" onclick="app.undo();">Undo</a>
+				<a href="#" data-role="button" data-theme="b" data-icon="refresh" onclick="app.askRefresh();">Reset</a>
+				<a href="#" data-role="button" data-theme="b" data-icon="delete" onclick="app.askExit();">Exit</a>
 			</div>
 		</div>
 	</div>

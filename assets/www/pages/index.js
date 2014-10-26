@@ -5,23 +5,35 @@ function init() {
 
 function deviceReady() {
     FastClick.attach(document.body);
-    document.addEventListener("backbutton", app.backbutton, false);
+    document.addEventListener("backbutton", app.undo, false);
     
     home.init(); 
 }
 
 var app = {
         
-    backbutton: function(e) {
-        //TODO
-    },
-
     askExit: function() {
-        navigator.notification.confirm('Are you sure you want to exit the application?', app.exit, 'Exit app', 'Cancel,Exit')
+        navigator.notification.confirm(
+                'Are you sure you want to exit the application?', 
+                function(buttonIndex) {
+                    if(buttonIndex == 1) return;
+                    else if(buttonIndex == 2) navigator.app.exitApp();
+                }, 
+                'Exit app', 
+                'Cancel,Exit');
     },
     
-    exit: function(buttonIndex) {
-        if(buttonIndex == 1) return;
-        else if(buttonIndex == 2) navigator.app.exitApp();
-    }
+    askRefresh: function() {
+        navigator.notification.confirm(
+                'Are you sure you want to start a new game?', 
+                function(buttonIndex) {
+                    if(buttonIndex == 1) return;
+                    else if(buttonIndex == 2) return;
+                }, 
+                'Refresh game', 
+                'Cancel,Refresh');
+    },
+    
+    undo: function() {},
+    
 };

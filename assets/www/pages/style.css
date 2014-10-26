@@ -1,6 +1,10 @@
 body {
 	background: #5a5959 !important;
 }
+a:focus, a:hover {
+	text-decoration: none;
+	color: white;
+}
 
 #menu {
 	width: 165px;
@@ -70,6 +74,10 @@ a.list-group-item:hover, a.list-group-item:focus {
 	border: 1px solid black;
 	font-weight: bold;
 }
+.controls {
+	margin-top: 20px;
+}
+
 .cell {
 	background-color: white;
 	width: 25%;
@@ -80,51 +88,55 @@ a.list-group-item:hover, a.list-group-item:focus {
 	text-align: center;
 	text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 }
+
 .c0 {
 	color: white;
 }
 .c2 {
-	background-color: #0074D9;
+	background-color: #CCE0FF;
 }
 .c4 {
-	background-color: #39CCCC;
+	background-color: #99C2FF;
 }
 .c8 {
-	background-color: #2ECC40;
+	background-color: #66A3FF;
 }
 .c16 {
-	background-color: #FFDC00;
+	background-color: #3385FF;
 }
 .c32 {
-	background-color: #FF4136;
+	background-color: #0066FF;
 }
 .c64 {
-	background-color: #F012BE;
+	background-color: #0052CC;
 }
 .c128 {
-	background-color: #AAAAAA;
+	background-color: #0047B2;
 }
 .c256 {
-	background-color: #3D9970;
+	background-color: #003D99;
 }
 .c512 {
-	background-color: #01FF70;
+	background-color: #003380;
 }
 .c1024 {
-	background-color: #85144B;
+	background-color: #002966;
 }
 .c2048 {
-	background-color: #FF851B;
+	background-color: #001F4C;
 }
 .c4096 {
-	background-color: #111111;
+	background-color: #001433;
 }
 .c8192 {
-	background-color: #7FDBFF;
+	background-color: #000A1A;
 }
 .c16384 {
-	background-color: #B10DC9;
+	background-color: #000000;
 }
 .c32768 {
-	background-color: #DDDDDD;
+	background-color: #000000;
+}
+.65536 {
+	background-color: #000000;
 }
