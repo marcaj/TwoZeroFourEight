@@ -11,7 +11,7 @@ function deviceReady() {
         $(document).i18n();
     });
     
-    home.init(); 
+    game.init(); 
 }
 
 var app = {
@@ -36,7 +36,9 @@ var app = {
                 i18n.t("notification.refresh.question"),
                 function(buttonIndex) {
                     if(buttonIndex == 1) return;
-                    else if(buttonIndex == 2) return;
+                    else if(buttonIndex == 2) {
+                        game.newGame();
+                    }
                 }, 
                 i18n.t("notification.refresh.title"), 
                 i18n.t("notification.refresh.buttons")

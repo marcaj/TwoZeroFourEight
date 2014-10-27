@@ -76,6 +76,7 @@ a.list-group-item:hover, a.list-group-item:focus {
 }
 .controls {
 	margin-top: 20px;
+	line-height: 60px;
 }
 
 .cell {
@@ -137,6 +138,6 @@ a.list-group-item:hover, a.list-group-item:focus {
 .c32768 {
 	background-color: #000000;
 }
-.65536 {
+.c65536 {
 	background-color: #000000;
 }
