@@ -45,6 +45,8 @@ var app = {
         );
     },
     
-    undo: function() {},
+    undo: function() {
+        game.back();
+    },
     
 };

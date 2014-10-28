@@ -1,6 +1,7 @@
 var game = {
 		board: new Board(),
 		view: null,
+		history: new Stack('history'),
 		
 		init: function() {
 		    menu.init();
@@ -21,8 +22,13 @@ var game = {
             $('#board').css('height', w);
             $('.cell').css('line-height', Math.round(w.substr(0, w.length-2)/4)+'px');
 			
-			this.run();
-			
+            var state = this.history.pop();
+            if(state) {
+                this.board.setState(state);
+            } else {
+                this.run();
+            }
+            
 		},
 		
 		run: function() {
@@ -34,7 +40,7 @@ var game = {
 				var x = Math.floor(Math.random() * (emptyCells.length)) + 1;
 				emptyCells[x-1].set('content', 2);
 				
-				
+				this.history.push(this.board.getState());
 			} else {
 				//TODO end
 			}
@@ -42,6 +48,15 @@ var game = {
 		
 		newGame: function() {
 		    this.board.setState([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
+		    this.history.clear();
 		    this.run();
-		}
+		},
+		
+		back: function() {
+		    this.history.pop();
+		    var state = this.history.pop();
+		    if(state) this.board.setState(state);
+		    this.history.push(state);
+		},
+		
 };
