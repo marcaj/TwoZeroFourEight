@@ -20,6 +20,11 @@
   		"question":	"Czy napewno chcesz rozpocząć nową grę?",
   		"title": "Nowa gra",
   		"buttons": "Anuluj,Nowa gra"
+  	},
+  	"gameover": {
+  		"message":	"Brak możliwych ruchów! Zacznij nową grę lub cofnij ostatnie ruchy.",
+  		"title": "Koniec gry",
+  		"button": "Ok"
   	}
   }
 }

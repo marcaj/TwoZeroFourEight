@@ -4,7 +4,6 @@ var game = {
 		history: new Stack('history'),
 		
 		init: function() {
-		    menu.init();
 		    
 			var boardView = new BoardView({
 				model: this.board,
@@ -42,7 +41,7 @@ var game = {
 				
 				this.history.push(this.board.getState());
 			} else {
-				//TODO end
+			    app.gameover();
 			}
 		},
 		

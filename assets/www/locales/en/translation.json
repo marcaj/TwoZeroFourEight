@@ -20,6 +20,11 @@
   		"question":	"Are you sure you want to start a new game?",
   		"title": "Refresh game",
   		"buttons": "Cancel,Refresh"
+  	},
+  	"gameover": {
+  		"message":	"Lack of possible moves! Start new game or undo moves.",
+  		"title": "Game over",
+  		"button": "Ok"
   	}
   }
   

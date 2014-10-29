@@ -20,7 +20,6 @@
 	<script src="libs/stack.js"></script>
 	<script type="text/javascript" charset="utf-8" src="cordova-1.9.0.js"></script>
 	<script type="text/javascript" charset="utf-8" src="js/Board.js"></script>
-	<script type="text/javascript" charset="utf-8" src="js/menu.js"></script>
 	<script type="text/javascript" charset="utf-8" src="js/index.js"></script>
 	<script type="text/javascript" charset="utf-8" src="js/script.js"></script>
   
@@ -35,11 +34,6 @@
 
 	<div id="launcherPage" data-role="page" class="type-interior" data-theme="b">
 		<div data-role="header" data-theme="b">
-            <div class="pull-left">
-                <a href="#" class="showMenu menu-button ui-link tapInEffected tapOutEffected">
-                	<img src="img/menu-button.png" width="40">
-                </a>
-            </div>
             <h1 class="ui-title" role="heading" aria-level="1">2048</h1>
 		</div>
 		
@@ -54,13 +48,6 @@
 				<a href="#" data-role="button" data-theme="b" data-icon="delete" data-i18n="controls.exit" onclick="app.askExit();">Exit</a>
 			</div>
 		</div>
-	</div>
-	
-	<div id="menu" class="list-group" style="display: block;">
-		<div class="infomenu" data-i18n="menu.menu">Menu</div>
-		<a href="#" class="list-group-item active" data-transition="pop" data-i18n="menu.newgame" onclick="app.askRefresh();">New game</a>
-		<!-- <a href="#" class="list-group-item" data-i18n="menu.settings" data-transition="pop">Settings</a> -->
-		<a href="#" class="list-group-item" data-transition="pop" data-i18n="menu.exit" onclick="app.askExit();">Exit</a>
 	</div>
 	
   </body>

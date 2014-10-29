@@ -45,6 +45,15 @@ var app = {
         );
     },
     
+    gameover: function() {
+        navigator.notification.alert(
+                i18n.t("notification.gameover.message"),
+                function() {}, 
+                i18n.t("notification.gameover.title"), 
+                i18n.t("notification.gameover.button")
+        );
+    },
+    
     undo: function() {
         game.back();
     },
