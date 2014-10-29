@@ -6,6 +6,7 @@ Another clone of [2048](http://saming.fr/p/2048/) game.
 Made with [backbone](http://backbonejs.org/) and [phonegap](http://phonegap.com/). 
 
 [Play online here!](http://www.marcaj.pl/TwoZeroFourEight/)
+
 [Download apk](http://www.marcaj.pl/TwoZeroFourEight/TwoZeroFourEight.apk)
 
 ## Screenshot
